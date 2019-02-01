@@ -44,7 +44,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.8.4",
     "siteFonts": [],
-    "uniqCompNum": 86,
+    "uniqCompNum": 89,
     "versionPublish": "4.8.4",
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
@@ -696,12 +696,119 @@
             },
             ".mbr-text,.mbr-section-btn": {
               "text-align": "center"
+            },
+            "#mailchimp": {
+              "background": "#88c24b",
+              "color": "#98579c",
+              "padding": "20px 15px"
+            },
+            "#mailchimp input": {
+              "border": "medium none",
+              "color": "gray",
+              "font-family": "",
+              "font-size": "16px",
+              "font-style": "",
+              "margin-bottom": "10px",
+              "padding": "8px 10px",
+              "width": "600px",
+              "border-radius": "20px",
+              "-moz-border-radius": "20px",
+              "-webkit-border-radius": "20px"
+            },
+            "#mailchimp input.email": {
+              "background": "#ffffff"
+            },
+            "#mailchimp input.name": {
+              "background": "#ffffff"
+            },
+            "#mailchimp input[type=\"submit\"]": {
+              "background": "#000",
+              "color": "#fff",
+              "cursor": "pointer",
+              "font-size": "15px",
+              "width": "35%",
+              "padding": "8px 0"
+            },
+            "#mailchimp input[type=\"submit\"]:hover": {
+              "color": "#f2c94c"
+            },
+            "H2": {
+              "color": "#fff9ff"
+            },
+            "H3": {
+              "color": "#fff9ff"
             }
           },
           "_name": "header7",
-          "_customHTML": "<section class=\"header3\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/purple%20light-2000x1333.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#fff9ff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-md-8 mbr-justify-content-center\">\n                <h1 class=\"mbr-fonts-style mbr-section-title mbr-black mbr-bold\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">TO START, LET'S UNCOVER YOUR PERSONAL ENERGETIC PATTERNS OF BELIEF AND EXAMINE THE BELIEF SYSTEMS THAT KEEP YOU STUCK.<br><br><span style=\"font-weight: normal;\"><i>&nbsp;Then we can find your personal healing codes to unlock and release yourself from the repeating pattern of stuck energy.&nbsp;</i></span><div><span style=\"font-weight: normal;\"><i>With those unique codes, we’ll know exactly how to go in and neutralize the charges to free up the stuck energy and obliterate the energetic block. This allows energy to flow.</i></span></div></h1>\n                <p class=\"mbr-fonts-style mbr-text mbr-white mbr-black\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada tempus magna, id bibendum lacus interdum\n                    ac. In hac habitasse platea dictumst.</p>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg mbr-editable-button btn-primary\" href=\"assets/files/HEAL PRACTITIONER SHEET 2015.pdf\" data-app-placeholder=\"Type Text\" target=\"_blank\">SUBSCRIBE TO HEAL® • GET A FREE INSTANT ENERGY CLEAN-UP AUDIO</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rgAPQ63P5P",
-          "_anchor": "header7-6",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/purple%20light-2000x1333.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#fff9ff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-md-8 mbr-justify-content-center\">\n                <h1 class=\"mbr-fonts-style mbr-section-title mbr-black mbr-bold\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">TO START, LET'S UNCOVER YOUR PERSONAL ENERGETIC PATTERNS OF BELIEF AND EXAMINE THE BELIEF SYSTEMS THAT KEEP YOU STUCK.<br><br><span style=\"font-weight: normal;\"><i>&nbsp;Then we can find your personal healing codes to unlock and release yourself from the repeating pattern of stuck energy.&nbsp;</i></span><div><span style=\"font-weight: normal;\"><i>With those unique codes, we’ll know exactly how to go in and neutralize the charges to free up the stuck energy and obliterate the energetic block. This allows energy to flow.</i></span></div></h1>\n                <p class=\"mbr-fonts-style mbr-text mbr-white mbr-black\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada tempus magna, id bibendum lacus interdum\n                    ac. In hac habitasse platea dictumst.</p>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><!-- Begin MailChimp Signup Form -->\n<div id=\"mailchimp\">\n<form action=\"https://HealingEnergyAndLearning.us4.list-manage.com/subscribe/post?u=f1da3fd516f5a63e7cc021dcb&id=62adad72f2\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n    <div id=\"mc_embed_signup_scroll\">\n\t<center><h2 class=\"mbr-section-title mbr-fonts-style align-center\">SUBSCRIBE TO HEAL® • GET A FREE INSTANT ENERGY CLEAN-UP AUDIO</h2><h3 class=\"mbr-section-title mbr-fonts-style align-center\">A powerful meditation to help you shift stuck energy. Get free tips to break free from the patterns that limit you.</h3>\n\t\t\t<input type=\"text\" size=\"”30″\" value=\"Your Name\" name=\"FNAME\" class id=\"mce-FNAME\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">\n\n<input type=\"email\" size=\"”30″\" value=\"Your Email\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">  \n        <input type=\"submit\" value=\"YES!! I AM IN!\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"></center>\n    </div>\n</form>\n</div>\n\n<!--End mc_embed_signup--></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "header7-2e",
+          "_isUserblock": true,
+          "_sourceTheme": "eventamp",
+          "_cid": "rgR19giWHH",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            "#mailchimp": {
+              "background": "#88c24b",
+              "color": "#98579c",
+              "padding": "20px 15px"
+            },
+            "#mailchimp input": {
+              "border": "medium none",
+              "color": "gray",
+              "font-family": "",
+              "font-size": "16px",
+              "font-style": "",
+              "margin-bottom": "10px",
+              "padding": "8px 10px",
+              "width": "600px",
+              "border-radius": "20px",
+              "-moz-border-radius": "20px",
+              "-webkit-border-radius": "20px"
+            },
+            "#mailchimp input.email": {
+              "background": "#ffffff"
+            },
+            "#mailchimp input.name": {
+              "background": "#ffffff"
+            },
+            "#mailchimp input[type=\"submit\"]": {
+              "background": "#f2f2f2",
+              "color": "#50086b",
+              "cursor": "pointer",
+              "font-size": "15px",
+              "width": "35%",
+              "padding": "8px 0"
+            },
+            "#mailchimp input[type=\"submit\"]:hover": {
+              "color": "#98579c"
+            },
+            "H2": {
+              "color": "#fff9ff"
+            },
+            "H3": {
+              "color": "#fff9ff"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section class=\"content3 mbr-section\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#fff9ff\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-multiline mbr-article></p>\n<!-- Begin MailChimp Signup Form -->\n<div id=\"mailchimp\">\n<form action=\"https://HealingEnergyAndLearning.us4.list-manage.com/subscribe/post?u=f1da3fd516f5a63e7cc021dcb&id=62adad72f2\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n    <div id=\"mc_embed_signup_scroll\">\n\t<center><h2 class=\"mbr-section-title mbr-fonts-style align-center\">SUBSCRIBE TO HEAL® • GET A FREE INSTANT ENERGY CLEAN-UP AUDIO</h2><h3 class=\"mbr-section-title mbr-fonts-style align-center\">A powerful meditation to help you shift stuck energy. Get free tips to break free from the patterns that limit you.</h3>\n\t\t\t<input type=\"text\" size=\"”30″\" value=\"Your Name\" name=\"FNAME\" class id=\"mce-FNAME\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">\n\n<input type=\"email\" size=\"”30″\" value=\"Your Email\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" onblur=\"if(this.value=='')this.value=this.defaultValue;\">  \n        <input type=\"submit\" value=\"YES!! I AM IN!\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"></center>\n    </div>\n</form>\n</div>\n\n<!--End mc_embed_signup-->\n        \n        </div>\n    </div>\n</section>",
+          "_cid": "rgR1xR5JcE",
+          "_anchor": "content3-2f",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -769,7 +876,7 @@
             }
           },
           "_name": "header4",
-          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        Block parameters controls (Blue \"Gear\" panel)\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"range\" inline title=\"Image Width\" name=\"imageWidth\" min=\"20\" max=\"50\" step=\"1\" value=\"50\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 resizeblock vcenter\">\n                <h1 class=\"mbr-fonts-style mbr-title mbr-black align-right mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\">We see your light. We also see some of the junk that muddles your light.</h1>\n                <div class=\"mbr-text align-right\">\n                    <p class=\"mbr-text mbr-black mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">The <b>HEAL TECHNIQUE®</b> helps you pinpoint when and where experiences muddied up your energy and teaches you how to transform and transmute it, therefore transcending it.<br><br><b>When energy flows, new doors open. When energy flows, new neural pathways are built in the brain and in your HEART</b>.<br></p>\n                </div>\n                <div class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg btn-success\" href=\"http://www.youawakening.com/winter-2017/carolanne-anselmo/\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"fa fa-arrow-right mbr-iconfont mbr-iconfont-btn\"></span><strong>LISTEN TO PODCAST: HEALING<br>&nbsp;THE ENERGY IN RELATIONSHIPS</strong></a></div>\n            </div>\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 resize vcenter\">\n                <div class=\"img_wrapper  vcenter\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/mbr-3-1080x720.jpg\" alt=\"Mobirise\" width=\"540\" height=\"360\" layout=\"responsive\" class=\"mobirise-loader\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-3-1080x720.jpg\" alt=\"Mobirise\" title>\n                    </amp-img>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        Block parameters controls (Blue \"Gear\" panel)\n\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"range\" inline=\"\" title=\"Image Width\" name=\"imageWidth\" min=\"20\" max=\"50\" step=\"1\" value=\"50\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 resizeblock vcenter\">\n                <h1 class=\"mbr-fonts-style mbr-title mbr-black align-right mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\">We see your light. We also see some of the junk that muddles your light.</h1>\n                <div class=\"mbr-text align-right\">\n                    <p class=\"mbr-text mbr-black mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">The <b>HEAL TECHNIQUE®</b> helps you pinpoint when and where experiences muddied up your energy and teaches you how to transform and transmute it, therefore transcending it.<br><br><b>When energy flows, new doors open. When energy flows, new neural pathways are built in the brain and in your HEART</b>.<br></p>\n                </div>\n                <div class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-6\"><a class=\"btn btn-lg btn-success\" href=\"http://www.youawakening.com/winter-2017/carolanne-anselmo/\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"fa fa-arrow-right mbr-iconfont mbr-iconfont-btn\"></span><strong>LISTEN TO PODCAST: HEALING<br>&nbsp;THE ENERGY IN RELATIONSHIPS</strong></a></div>\n            </div>\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 resize vcenter\">\n                <div class=\"img_wrapper  vcenter\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/mbr-3-1080x720.jpg\" alt=\"Mobirise\" width=\"540\" height=\"360\" layout=\"responsive\" class=\"mobirise-loader\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-3-1080x720.jpg\" alt=\"Mobirise\" title=\"\">\n                    </amp-img>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
           "_anchor": "header4-2",
           "_isUserblock": true,
           "_sourceTheme": "eventamp",
@@ -1034,28 +1141,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bg",
-            "p": {
-              "margin": "0"
-            },
-            ".mbr-text": {
-              "color": "#98579c",
-              "text-align": "center"
-            }
-          },
-          "_name": "footer4",
-          "_customHTML": "<section class=\"footer1\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#fff9ff\" selected>\n\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-col-sm-12 align-center\">\n            <p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\">\n                <b><a href=\"index.html\" class=\"text-success\"><b>Home</b></a> •  HEAL® Products •</b> <a href=\"about-us.html\" class=\"text-success\"><b>About Carolanne</b></a><b> • </b><a href=\"seminars.html\" class=\"text-success\" style=\"font-weight: bold;\">Sessions</a><b> • </b><a href=\"seminars.html\" class=\"text-success\" style=\"font-weight: bold;\">Events</a><b> • </b><a href=\"contact-us.html\" class=\"text-success\" style=\"font-weight: bold;\">Connect</a>\n            </p>\n        </div>\n    </div>\n</section>",
-          "_cid": "rgIP6vMoe8",
-          "_anchor": "footer4-29",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footer",
           "_params": {}
         }
       ]
@@ -3544,11 +3629,11 @@
           "_name": "content3",
           "_customHTML": "<section class=\"content3 mbr-section\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12\">\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline mbr-article><b>For an understanding of that powerful love you hold, and for an easy transition during this shift, register for our HEAL Technique® classes and events! </b><br>We are ALL capable to make our dreams come true…sometimes we just need direction. We have a class or event for those who are ready to step it up!</p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rgIBPvZYil",
+          "_anchor": "content3-1s",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content3-1s"
+          "_params": {}
         },
         {
           "_styles": {
@@ -4253,11 +4338,11 @@
           "_name": "footer4",
           "_customHTML": "<section class=\"footer1\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#fff9ff\" selected>\n\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-col-sm-12 align-center\">\n            <p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\">\n                <b><a href=\"index.html\" class=\"text-success\"><b>Home</b></a> •  HEAL® Products •</b> <a href=\"about-us.html\" class=\"text-success\"><b>About Carolanne</b></a><b> • </b><a href=\"seminars.html\" class=\"text-success\" style=\"font-weight: bold;\">Sessions</a><b> • </b><a href=\"seminars.html\" class=\"text-success\" style=\"font-weight: bold;\">Events</a><b> • </b><a href=\"contact-us.html\" class=\"text-success\" style=\"font-weight: bold;\">Connect</a>\n            </p>\n        </div>\n    </div>\n</section>",
           "_cid": "rgIDxL2ToR",
+          "_anchor": "footer4-1u",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {},
-          "_anchor": "footer4-1u"
+          "_params": {}
         },
         {
           "_styles": {
@@ -4289,11 +4374,11 @@
           "_name": "header3",
           "_customHTML": "<section class=\"header3\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-4-1920x1280.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">What’s going on with you in your life that you don’t understand? <br>Or that you want to heal or change? <br>Or that you want to manifest?</h1>\n        <p class=\"mbr-fonts-style mbr-text mbr-white align-left mbr-black\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text,.mbr-section-btn\" mbr-if=\"showText\"><b>WHATEVER IT IS, IT'S ENERGETIC IN NATURE. &nbsp;</b><br><b>SHIFT THE WAY YOU THINK, ACT AND FEEL. SHIFT YOUR LIFE.</b><br>We are ALL capable to make our dreams come true…sometimes we just need direction.</p>\n        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-lg mbr-editable-button btn-success\" href=\"mailto:healingenergyandlearning@gmail.com\" data-app-placeholder=\"Type Text\"><strong>SEND US A EMAIL</strong></a></div>\n    </div>\n</section>",
           "_cid": "rgIDxMpkMU",
+          "_anchor": "header3-1v",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "header3-1v"
+          "_params": {}
         },
         {
           "_styles": {
@@ -4373,11 +4458,11 @@
           "_name": "form1",
           "_customHTML": "<section class=\"form1\" group=\"Forms\" plugins=\"amp-main,amp-form,amp-mustache\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#dedede\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <h2 mbr-if=\"showTitle\" class=\"align-center mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\"><span style=\"font-weight: normal;\">ARE YOU READY TO SHIFT? If so, we are ready to assist!&nbsp;</span></h2>\n        <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-section-subtitle\">For an understanding of that powerful love you hold,&nbsp;<div>and for an easy transition during this shift, send us a message!</div></h3>\n\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div mbr-form class=\"mbr-col-lg-12  mbr-col-md-10 \">\n                <form class=\"mbr-form\" action=\"barten97@aol.com\" method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate>\n                    <div submit-success>\n                        <template data-form-alert type=\"amp-mustache\">Thank you! Message successfully sent.</template>\n                    </div>\n                    <div submit-error>\n                        <template data-form-alert type=\"amp-mustache\">Thank you! Message successfully sent.</template>\n                    </div>\n                    <div class=\"fieldset\">\n\n                        <input type=\"hidden\" name=\"form[data][1][0]\" value=\"Name\">\n                        <input class=\"input-label\" type=\"text\" name=\"form[data][1][1]\" data-form-field=\"Name\" placeholder=\"Name\" required>\n\n\n                        <input type=\"hidden\" name=\"form[data][2][0]\" value=\"Phone\">\n                        <input class=\"input-label\" type=\"phone\" name=\"form[data][2][1]\" data-form-field=\"Phone\" placeholder=\"Phone\" required>\n\n\n                        <input type=\"hidden\" name=\"form[data][0][0]\" value=\"Email\">\n                        <input class=\"input-label\" type=\"email\" name=\"form[data][0][1]\" data-form-field=\"Email\" placeholder=\"Email\" required>\n\n                        <label class=\"area\">\n                            <input type=\"hidden\" name=\"form[data][3][0]\" value=\"Message\">\n                            <textarea name=\"form[data][3][1]\" rows=\"7\" data-form-field=\"Message\" placeholder=\"Message\"></textarea>\n                        </label>\n\n                    </div>\n                    <div class=\"align-left\">\n                        <div mbr-buttons mbr-theme-style=\"display-6\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" class=\"mbr-section-btn input-group-btn\"><a type=\"submit\" class=\"btn btn-success\" data-app-placeholder=\"Type Text\">CONNECT WITH US</a></div>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rgIIWEdXWC",
+          "_anchor": "form1-28",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "form1-28"
+          "_params": {}
         },
         {
           "_styles": {
@@ -4458,33 +4543,11 @@
           "_name": "social-follow",
           "_customHTML": "<section class=\"social-follow\" group=\"Social\" plugins=\"amp-main, font-awesome\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Twitter\" name=\"tw\">\n        <input type=\"checkbox\" title=\"Facebook\" name=\"fb\" checked>\n        <input type=\"checkbox\" title=\"Google Plus\" name=\"gp\">\n        <input type=\"checkbox\" title=\"YouTube\" name=\"yt\">\n        <input type=\"checkbox\" title=\"Instagram\" name=\"ins\" checked>\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pi\">\n        <input type=\"checkbox\" title=\"Tumblr\" name=\"tu\">\n        <input type=\"checkbox\" title=\"LinkedIn\" name=\"li\" checked>\n        <input type=\"checkbox\" title=\"VK\" name=\"vk\">\n        <input type=\"checkbox\" title=\"Odnoklassniki\" name=\"od\">\n        <input type=\"color\" title=\"Ico Background Color\" name=\"icobg\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Ico Color\" name=\"ico\" value=\"#ffffff\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#50086b\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-md-8 mbr-justify-content-center\">\n                <h1 class=\"mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">FOLLOW HEAL® ENERGY AND LEARNING ON SOCIAL MEDIA</h1>\n\n                <div class=\"ico-wrapper\">\n                    <div class=\"card-img\" mbr-if=\"tw\">\n                        <a href=\"https://twitter.com/mobirise\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-twitter fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"fb\">\n                        <a href=\"https://www.facebook.com/Mobirise/\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-facebook-f fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"gp\">\n                        <a href=\"https://plus.google.com/u/0/+Mobirise\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-google-plus fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"yt\">\n                        <a href=\"https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-youtube-play fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"ins\">\n                        <a href=\"https://www.instagram.com/mobirise/\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-instagram fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"pi\">\n                        <a href=\"https://ru.pinterest.com/mobirise/\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-pinterest-p fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"tu\">\n                        <a href=\"https://mobirise.tumblr.com/\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-tumblr fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"li\">\n                        <a href=\"https://www.linkedin.com/in/mobirise\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-linkedin fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"vk\">\n                        <a href=\"#\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-vk fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n                    <div class=\"card-img\" mbr-if=\"od\">\n                        <a href=\"#\">\n                            <span class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"amp-iconfont fa-odnoklassniki fa\"></span>\n                            </span>\n                        </a>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rgIDxXQuzx",
+          "_anchor": "social-follow-22",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "social-follow-22"
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bg",
-            "p": {
-              "margin": "0"
-            },
-            ".mbr-text": {
-              "color": "#98579c",
-              "text-align": "center"
-            }
-          },
-          "_name": "footer4",
-          "_customHTML": "<section class=\"footer1\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#fff9ff\" selected>\n\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-col-sm-12 align-center\">\n            <p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\">\n                <b><a href=\"index.html\" class=\"text-success\"><b>Home</b></a> •  HEAL® Products •</b> <a href=\"about-us.html\" class=\"text-success\"><b>About Carolanne</b></a><b> • </b><a href=\"seminars.html\" class=\"text-success\" style=\"font-weight: bold;\">Sessions</a><b> • </b><a href=\"seminars.html\" class=\"text-success\" style=\"font-weight: bold;\">Events</a><b> • </b><a href=\"contact-us.html\" class=\"text-success\" style=\"font-weight: bold;\">Connect</a>\n            </p>\n        </div>\n    </div>\n</section>",
-          "_cid": "rgIE46V75g",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footer",
-          "_params": {},
-          "_anchor": "footer4-27"
+          "_params": {}
         }
       ]
     }

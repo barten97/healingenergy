@@ -44,7 +44,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.8.4",
     "siteFonts": [],
-    "uniqCompNum": 126,
+    "uniqCompNum": 128,
     "versionPublish": "4.8.4",
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
@@ -5015,7 +5015,7 @@
             }
           },
           "_name": "content3",
-          "_customHTML": "<section class=\"content3 mbr-section\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#fff9ff\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12\">\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline mbr-article><i>Are you ready to take back your life?</i><br><b>REMOVE THE TRAUMA WITHOUT THE DRAMA</b><br><i>What if you could totally transform your life by using your heart?</i><br><b>YOU CAN! ...PEOPLE ARE DOING IT EVERYDAY<br></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"content3 mbr-section\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#fff9ff\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12\">\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline mbr-article><i>Are you ready to take back your life?</i><br><b>REMOVE THE TRAUMA WITHOUT THE DRAMA</b><br><i>What if you could totally transform your life by using your heart?</i><br><b>YOU CAN! ...PEOPLE ARE DOING IT EVERYDAY<br></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content3-3e",
           "_isUserblock": true,
           "_sourceTheme": "eventamp",
@@ -5134,6 +5134,222 @@
         },
         {
           "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".card-img": {
+              "display": "flex",
+              "width": "30%",
+              "margin": "auto",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".container-fluid": {
+              "padding-left": "15px",
+              "padding-right": "15px"
+            },
+            ".flex": {
+              "display": "flex",
+              "width": "70%",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "margin-right": "30px"
+            },
+            ".wrapper": {
+              "display": "flex",
+              "width": "100%"
+            },
+            ".btn": {
+              "margin": "0"
+            },
+            "h4": {
+              "margin": "0"
+            },
+            "h3": {
+              "padding-bottom": "15px",
+              "margin": "0",
+              "border-bottom": "1px dotted gray",
+              "margin-bottom": "10px"
+            },
+            ".card": {
+              "margin-bottom": "20px",
+              "position": "relative",
+              "display": "flex",
+              "-ms-flex-direction": "column",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "min-width": "0",
+              "word-wrap": "break-word",
+              "background-clip": "border-box",
+              "border-radius": "0",
+              "width": "100%",
+              "min-height": "1px"
+            },
+            ".card-title": {
+              "text-align": "left",
+              "& when not (@showText)": {
+                "padding-bottom": "10px"
+              }
+            },
+            ".card-box": {
+              "padding-top": "2rem"
+            },
+            "amp-img": {
+              "width": "100%"
+            },
+            ".card-sub-title": {
+              "font-style": "italic",
+              "color": "#5b5b5b"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".iconfont-wrapper": {
+              "display": "inline-block",
+              "width": "~\"@{iconsSize}rem\"",
+              "height": "~\"@{iconsSize}rem\"",
+              ".amp-iconfont": {
+                "color": "@iconsColor",
+                "font-size": "~\"@{iconsSize}rem\""
+              }
+            }
+          },
+          "_name": "features10",
+          "_customHTML": "<section class=\"features10 mbr-section\" group=\"Features\" plugins=\"amp-main, font-awesome\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Sub Title\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"4\" step=\"0.5\" value=\"3.5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#50086b\" condition=\"showIcons\">\n\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#dedede\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{\n                              'mbr-col-lg-6': cardsAmount == 2,                                                \n                             'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,                                             \n                             'mbr-col-lg-2': cardsAmount > 4,\n                             'last-child': cardsAmount == 1}\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n\n\n                        <div class=\"wrapper\">\n\n                            <div class=\"card-img\" mbr-if=\"showIcons\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-key fa\"></span>\n                                </span>\n                            </div>\n\n\n                            <div class=\"flex\">\n\n\n                                <h4 class=\"card-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">HUMAN DESIGN <br>READING</h4>\n                                <h3 class=\"card-sub-title mbr-fonts-style align-left\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">60 Minute Sessions<div>with Carolanne Anselmo</div></h3>\n\n                            </div>\n                        </div>\n\n\n\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Healing together as a team!&nbsp;Distance does not matter when doing this energy work.</b><br>Using a combination of intuition, your responses, and energy together we bring about a shift that will promote healing within you  This is  through the power of focused thought, intention through the energy of the heart, and a little bit of powerful breath work.&nbsp;</p>\n                        <select id=\"4142763689\"><option value=\"https://healingenergyandlearning.dpdcart.com/product/177162?method_id=191110\">Human Design Reading 60 min ($200.00)</option></select><br><a href=\"#\" onclick=\"window.location=document.getElementById('4142763689').options[document.getElementById('4142763689').selectedIndex].value;return false;\" class=\"dpd-atc-button\"><br><img border=\"0\" alt=\"Buy Now!\" src=\"https://getdpd.com/images/buy_buttons/atc/solid3/buy-now_1-6_green.png\"></a>{JS_CODE_0}\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg btn-primary\" href=\"mailto:healingenergyandlearning@gmail.com\" data-app-placeholder=\"Type Text\">\n                                BOOK TODAY</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{\n                             'mbr-col-lg-6': cardsAmount == 2,                                       \n                             'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'mbr-col-lg-2': cardsAmount > 4,\n                             'last-child': cardsAmount == 2\n                             }\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n\n\n                        <div class=\"wrapper\">\n\n                            <div class=\"card-img\" mbr-if=\"showIcons\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-gears fa\"></span>\n                                </span>\n                            </div>\n\n\n                            <div class=\"flex\">\n\n\n                                <h4 class=\"card-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">GENE KEYS<br>SESSIONS&nbsp;</h4>\n                                <h3 class=\"card-sub-title mbr-fonts-style align-left\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">Sessions with Hypnosis<br>Required 13 sessions</h3>\n\n                            </div>\n                        </div>\n\n\n\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Dive deeper into your design!</b><br>Carolanne uses a bit Human Design with each of her clients in each session to which they claim to feel is a “permission slip” to be who they authentically are. This is your chance to dive even deeper into your energy system, an hour learning all about YOU!&nbsp;To understand your flow and your strengths is pure empowerment. </p><select id=\"58937331\"><option value=\"https://healingenergyandlearning.dpdcart.com/product/177163?method_id=191111\">Gene Keys Sessions with Hypnosis required 13 sessions ($200.00)</option></select><a href=\"#\" onclick=\"window.location=document.getElementById('58937331').options[document.getElementById('58937331').selectedIndex].value;return false;\" class=\"dpd-atc-button\"><br><img border=\"0\" alt=\"Buy Now!\" src=\"https://getdpd.com/images/buy_buttons/atc/solid3/buy-now_1-6_green.png\"></a>{JS_CODE_1}\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg btn-primary\" href=\"mailto:healingenergyandlearning@gmail.com\" data-app-placeholder=\"Type Text\">\n                                BOOK TODAY</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n                             'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n\n\n                        <div class=\"wrapper\">\n\n                            <div class=\"card-img\" mbr-if=\"showIcons\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-forward fa\"></span>\n                                </span>\n                            </div>\n\n\n                            <div class=\"flex\">\n\n\n                                <h4 class=\"card-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">HEAL TECHNIQUE®<br>AUDIO PROGRAMS</h4>\n                                <h3 class=\"card-sub-title mbr-fonts-style align-left\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">HEAL®: Tool Kit &amp; Meditations Audio Download<br></h3>\n\n                            </div>\n                        </div>\n\n\n\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Discover subconscious patterns and unknown aspects of you! </b><br>Learn the essentials of getting started with the HEAL Technique® at your own pace. You will be given the detailed instruction on the ins and outs of the HEAL Technique® to create physical, emotional and spiritual healing. Learn how to put your own natural intuition to work for YOU!</p>\n<div class=\"dpd-selectomatic\"><select id=\"6315598357\"><option value=\"https://healingenergyandlearning.dpdcart.com/cart/add?product_id=176825&method_id=190705\">H.E.A.L.® Tool Kit&nbsp;Audio Download ($39.00)</option><option value=\"https://healingenergyandlearning.dpdcart.com/cart/add?product_id=177125&method_id=191064\">H.E.A.L.@ Clearing to Manifest Meditation ($7.00)</option><option value=\"https://healingenergyandlearning.dpdcart.com/cart/add?product_id=177153&method_id=191093\">H.E.A.L.®  Soul Fragment Return Meditation ($5.00)</option><option value=\"https://healingenergyandlearning.dpdcart.com/cart/add?product_id=177126&method_id=191065\">H.E.A.L.® Inner Child Meditation ($5.00)</option><option value=\"https://healingenergyandlearning.dpdcart.com/cart/add?product_id=177154&method_id=191094\">H.E.A.L.®  Cord Release Meditation ($5.00)</option></select><br><a href=\"#\" onclick=\"window.location=document.getElementById('6315598357').options[document.getElementById('6315598357').selectedIndex].value;return false;\" class=\"dpd-atc-button\"><br><img border=\"0\" alt=\"Buy Now!\" src=\"false\"></a></div>{JS_CODE_2}\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><br><a class=\"btn btn-lg btn-primary\" href=\"https://healingenergyandlearning.dpdcart.com/cart/add?product_id=176825&method_id=190705\" data-app-placeholder=\"Type Text\" target=\"_blank\">\n                                PURCHASE NOW</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n                             'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n\n\n                        <div class=\"wrapper\">\n\n                            <div class=\"card-img\" mbr-if=\"showIcons\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-send-o fa\"></span>\n                                </span>\n                            </div>\n\n\n                            <div class=\"flex\">\n\n\n                                <h4 class=\"card-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">PRACTICAL EXAMPLES</h4>\n                                <h3 class=\"card-sub-title mbr-fonts-style align-left\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n\n                            </div>\n                        </div>\n\n\n\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Sed malesuada tempus magna, id bibendum lacus\n                            interdum ac. In hac habitasse platea dictumst.\n                        </p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\">\n                            <a class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">\n                                MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n\n\n        </div>\n    </div>\n</section>",
+          "_anchor": "features10-3i",
+          "_isUserblock": true,
+          "_sourceTheme": "eventamp",
+          "_cid": "rhSKeekz29",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script src=\"https://healingenergyandlearning.dpdcart.com/dpd.js\"></script>",
+            "<script src=\"https://healingenergyandlearning.dpdcart.com/dpd.js\"></script>",
+            "<script src=\"https://healingenergyandlearning.dpdcart.com/dpd.js\"></script>"
+          ],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".card-img": {
+              "display": "flex",
+              "width": "30%",
+              "margin": "auto",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".container-fluid": {
+              "padding-left": "15px",
+              "padding-right": "15px"
+            },
+            ".flex": {
+              "display": "flex",
+              "width": "70%",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "margin-right": "30px"
+            },
+            ".wrapper": {
+              "display": "flex",
+              "width": "100%"
+            },
+            ".btn": {
+              "margin": "0"
+            },
+            "h4": {
+              "margin": "0"
+            },
+            "h3": {
+              "padding-bottom": "15px",
+              "margin": "0",
+              "border-bottom": "1px dotted gray",
+              "margin-bottom": "10px"
+            },
+            ".card": {
+              "margin-bottom": "20px",
+              "position": "relative",
+              "display": "flex",
+              "-ms-flex-direction": "column",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "min-width": "0",
+              "word-wrap": "break-word",
+              "background-clip": "border-box",
+              "border-radius": "0",
+              "width": "100%",
+              "min-height": "1px"
+            },
+            ".card-title": {
+              "text-align": "left",
+              "& when not (@showText)": {
+                "padding-bottom": "10px"
+              }
+            },
+            ".card-box": {
+              "padding-top": "2rem"
+            },
+            "amp-img": {
+              "width": "100%"
+            },
+            ".card-sub-title": {
+              "font-style": "italic",
+              "color": "#5b5b5b"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".iconfont-wrapper": {
+              "display": "inline-block",
+              "width": "~\"@{iconsSize}rem\"",
+              "height": "~\"@{iconsSize}rem\"",
+              ".amp-iconfont": {
+                "color": "@iconsColor",
+                "font-size": "~\"@{iconsSize}rem\""
+              }
+            }
+          },
+          "_name": "features10",
+          "_customHTML": "<section class=\"features10 mbr-section\" group=\"Features\" plugins=\"amp-main, font-awesome\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Sub Title\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"4\" step=\"0.5\" value=\"3.5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#50086b\" condition=\"showIcons\">\n\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#dedede\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{\n                              'mbr-col-lg-6': cardsAmount == 2,                                                \n                             'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,                                             \n                             'mbr-col-lg-2': cardsAmount > 4,\n                             'last-child': cardsAmount == 1}\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n\n\n                        <div class=\"wrapper\">\n\n                            <div class=\"card-img\" mbr-if=\"showIcons\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-gg-circle fa\"></span>\n                                </span>\n                            </div>\n\n\n                            <div class=\"flex\">\n\n\n                                <h4 class=\"card-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">ALLERGY<br>ELIMINATION</h4>\n                                <h3 class=\"card-sub-title mbr-fonts-style align-left\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">60 Minutes First Time Session<br>60 &amp; 30 Follow-Sessions</h3>\n\n                            </div>\n                        </div>\n\n\n\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Healing together as a team!&nbsp;Distance does not matter when doing this energy work.</b><br>Using a combination of intuition, your responses, and energy together we bring about a shift that will promote healing within you  This is  through the power of focused thought, intention through the energy of the heart, and a little bit of powerful breath work.&nbsp;</p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg btn-primary\" href=\"mailto:healingenergyandlearning@gmail.com\" data-app-placeholder=\"Type Text\">\n                                BOOK TODAY</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{\n                             'mbr-col-lg-6': cardsAmount == 2,                                       \n                             'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'mbr-col-lg-2': cardsAmount > 4,\n                             'last-child': cardsAmount == 2\n                             }\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n\n\n                        <div class=\"wrapper\">\n\n                            <div class=\"card-img\" mbr-if=\"showIcons\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-forward fa\"></span>\n                                </span>\n                            </div>\n\n\n                            <div class=\"flex\">\n\n\n                                <h4 class=\"card-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">HYPNOSIS<br>SESSION</h4>\n                                <h3 class=\"card-sub-title mbr-fonts-style align-left\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">90 Minutes <br>with Carolanne Anselmo</h3>\n\n                            </div>\n                        </div>\n\n\n\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Discover subconscious patterns and unknown aspects of you!</b> <br>Learn the essentials of getting started with the HEAL Technique® at your own pace. You will be given the detailed instruction on the ins and outs of the HEAL Technique® to create physical, emotional and spiritual healing. Learn how to put your own natural intuition to work for YOU!</p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg btn-primary\" href=\"mailto:healingenergyandlearning@gmail.com\" data-app-placeholder=\"Type Text\">\n                                BOOK TODAY</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n                             'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n\n\n                        <div class=\"wrapper\">\n\n                            <div class=\"card-img\" mbr-if=\"showIcons\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-forward fa\"></span>\n                                </span>\n                            </div>\n\n\n                            <div class=\"flex\">\n\n\n                                <h4 class=\"card-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">HEAL TECHNIQUE®<br>AUDIO PROGRAMS</h4>\n                                <h3 class=\"card-sub-title mbr-fonts-style align-left\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">HEAL®: Tool Kit &amp; Meditations Audio Download<br></h3>\n\n                            </div>\n                        </div>\n\n\n\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Discover subconscious patterns and unknown aspects of you! </b><br>Learn the essentials of getting started with the HEAL Technique® at your own pace. You will be given the detailed instruction on the ins and outs of the HEAL Technique® to create physical, emotional and spiritual healing. Learn how to put your own natural intuition to work for YOU!</p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg btn-primary\" href=\"https://healingenergyandlearning.dpdcart.com/cart/add?product_id=176825&method_id=190705\" data-app-placeholder=\"Type Text\" target=\"_blank\">\n                                PURCHASE NOW</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4, 'mbr-col-lg-2': cardsAmount > 4,\n                             'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n\n\n                        <div class=\"wrapper\">\n\n                            <div class=\"card-img\" mbr-if=\"showIcons\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-send-o fa\"></span>\n                                </span>\n                            </div>\n\n\n                            <div class=\"flex\">\n\n\n                                <h4 class=\"card-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">PRACTICAL EXAMPLES</h4>\n                                <h3 class=\"card-sub-title mbr-fonts-style align-left\" mbr-theme-style=\"display-3\" mbr-if=\"showSubTitle\" data-app-selector=\".card-sub-title\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n\n                            </div>\n                        </div>\n\n\n\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Sed malesuada tempus magna, id bibendum lacus\n                            interdum ac. In hac habitasse platea dictumst.\n                        </p>\n                        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\">\n                            <a class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">\n                                MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n\n\n        </div>\n    </div>\n</section>",
+          "_anchor": "features10-3j",
+          "_isUserblock": true,
+          "_sourceTheme": "eventamp",
+          "_cid": "rhSLdbaoeq",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 1rem)",
               "padding-bottom": "(@paddingBottom * 1rem)"
@@ -5156,7 +5372,7 @@
             }
           },
           "_name": "header2",
-          "_customHTML": "<section class=\"header2\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#50086b\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-1.jpg\">\n        </fieldset>\n        <select title=\"Text Position\" name=\"justify\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f7f7f7\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{\n                 'mbr-justify-content-left': justify == 1,\n                 'mbr-justify-content-center': justify == 2,\n                 'mbr-justify-content-right': justify == 3}\">\n            <div class=\"mbr-col-lg-8 mbr-col-md-12\">\n                <h2 class=\"mbr-fonts-style mbr-section-title mbr-bold align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">ARE YOU READY TO SHIFT? If so, we are ready to assist!&nbsp;</h2>\n                <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat pharetra ex, vitae feugiat erat\n                    consectetur sed. Praesent commodo sed est eget pharetra. Curabitur vel risus ac elit sodales scelerisque.&nbsp;Morbi\n                    consequat pharetra ex.</p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg mbr-editable-button btn-white-outline\" href=\"mailto:healingenergyandlearning@gmail.com\" data-app-placeholder=\"Type Text\">\n                        <span class=\"fa fa-arrow-right mbr-iconfont-btn\"><br></span>&nbsp;BOOK YOUR SESSION TODAY</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header2\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#50086b\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-1.jpg\">\n        </fieldset>\n        <select title=\"Text Position\" name=\"justify\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f7f7f7\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{\n                 'mbr-justify-content-left': justify == 1,\n                 'mbr-justify-content-center': justify == 2,\n                 'mbr-justify-content-right': justify == 3}\">\n            <div class=\"mbr-col-lg-8 mbr-col-md-12\">\n                <h2 class=\"mbr-fonts-style mbr-section-title mbr-bold align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">ARE YOU READY TO SHIFT? If so, we are ready to assist!&nbsp;</h2>\n                <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat pharetra ex, vitae feugiat erat\n                    consectetur sed. Praesent commodo sed est eget pharetra. Curabitur vel risus ac elit sodales scelerisque.&nbsp;Morbi\n                    consequat pharetra ex.</p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn btn-lg mbr-editable-button btn-white-outline\" href=\"mailto:healingenergyandlearning@gmail.com\" data-app-placeholder=\"Type Text\">\n                        <span class=\"fa fa-arrow-right mbr-iconfont-btn\"><br></span>&nbsp;SCHEDULE YOUR SESSION TODAY</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "header2-3b",
           "_isUserblock": true,
           "_sourceTheme": "fitnessamp",
